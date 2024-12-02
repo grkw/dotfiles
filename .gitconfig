@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Grace Kwak
+	email = gracekwak0@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	graph = log --all --graph --decorate --oneline
